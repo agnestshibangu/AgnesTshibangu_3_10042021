@@ -1,0 +1,32 @@
+
+    .footer {
+        width: 100%;
+        height: 197px;
+        background-color: grey;
+        color: white;
+        margin-top: auto;
+        
+       
+    }
+   
+    .logo--small-white {
+        margin-top: 27px;
+        margin-left: 25px;
+        fill: white;
+        height: 18px;
+    }
+
+    ul {
+        margin-top: 25px;
+        margin-left: 25px;
+        list-style: none;
+    }
+
+    li:nth-child(2),  li:nth-child(3),  li:nth-child(4) { 
+        margin-top: 11px;
+        list-style: none;
+    }
+
+    .fa-utensils, .fa-link {
+        margin-right: 12px; 
+    }

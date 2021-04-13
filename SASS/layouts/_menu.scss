@@ -1,0 +1,83 @@
+
+.container-main {
+    width: 100%;
+    height: 1416px;
+}
+
+.menu-image {
+    width: 100%;
+    height: 253px;
+    background-color: rgb(54, 150, 228);
+    position: absolute;
+}
+
+.container-menu {
+    width: 100%; 
+    height: 1197px;
+    background-color: lightgrey;
+    position: absolute;
+    margin-top: 223px;
+    border-radius: 40px 40px 0 0 ;
+    
+    
+}
+
+.container-menu__inside {
+    height: 1196px;
+    width: 93.33%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-menu__title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    max-width: 100%;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fa-heart {
+    margin-right: 7%;
+}
+
+.container-menu__inner {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.container-menu__title2 {
+    margin-top: 47px;
+    justify-content: flex-start;
+}
+
+.underline-green {
+    margin-top: 4px;
+    width: 40px;
+    height: 3px;
+    background-color: lightseagreen;
+}
+
+.container-menu__group {
+    margin-top: 14px;
+}
+
+.container-menu__element {
+    width: 100%;
+    height: 70px;
+    background-color: lightseagreen;
+    border-radius: 20px
+}
+
+.container-menu__element--margin-top {
+    margin-top: 15px;
+}
+

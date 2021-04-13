@@ -1,0 +1,203 @@
+
+@import 'SASS/utils/variables';
+   //variables
+   //fonctions
+@import 'SASS/utils/mixins';  //mixins
+   //placeholder
+//@import './vendors/css';
+//@import 'SASS/base/css.scss';
+    //fonts
+@import 'SASS/base/box-sizing.scss' ; 
+//@import 'SASS/components/css.scss';
+@import 'SASS/components/buttons.scss';
+
+
+@import 'SASS/layouts/menu';
+@import 'SASS/layouts/header'; 
+@import 'SASS/layouts/footer';  
+//@import 'SASS/pages/css.scss';
+    //blocs qui ne s'appliquent qu'à une seule page
+//@import 'SASS/themes/css.scss';
+
+
+
+// format smartphone //
+
+@media (min-width: 375px) {
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+ }
+    
+    
+
+.body {
+    display: block;
+    margin: 0;
+    
+}
+
+.container {
+    width: 100%;
+    height: 2273px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ 
+
+
+
+// entete2 //@at-root
+
+
+.entete2 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(235, 235, 235);
+    @include midflex;
+}
+
+.textlocalisation {
+    font-size: 1em;
+}
+
+.fa-map-marker-alt {
+    margin-right: 18px;
+}
+
+// container reservez explorez //@at-root
+
+
+
+.container-res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 43px;
+    height: 287px;
+   // background-color: lightpink;
+   
+}
+
+.titre-reserver1 {
+
+    font-size: 1em;
+    font-weight: bold;
+    width: 61%;
+    text-align: center;
+    margin-top: 44px;
+}
+
+.titre-reserver2 {
+    font-size: 1em;
+    width: 81%;
+    margin-top: 22px;
+    text-align: center;
+
+}
+
+
+
+  
+
+    // fonctionnement //@at-root
+
+    .container-fonctio {
+        margin-top: 52px;
+        width: 89.6%;
+        height: 14.29%;
+       // background-color: lime;
+        display: flex; 
+        flex-direction: column;
+        
+
+    }
+
+    .titre-fonctio {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+
+    // buttons fonctionnement //@at-root
+
+    .rectangles {
+        margin-top: 34px;
+    }
+    .rectangle {
+        width: 327px;
+        height: 73px;
+        background-color: #d3d3d3;
+        margin-left: 10px;
+        border-radius: 30px ;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .rectangle--margin-top{
+        margin-top: 24px;
+    }
+
+    .rond {
+        width: 24px;
+        height: 24px;
+        background-color: purple;
+        color: white;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: -10px;
+      
+
+    }
+
+    .instruction {
+        margin-left: 34px;;
+    }
+
+    .fa-fonctio {
+        margin-right: 27px;
+    }
+
+    // resto-container
+
+    .resto-container__title {
+        margin-top: 60px;
+    }
+
+    .resto-container {
+        width: 100%;
+        height: 1227px;
+        margin-top: 70px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+    }
+
+    .resto-container__inside {
+        width: 89.6%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .resto-container__card {
+        width: 100%;
+        height: 1230px;
+        background-color: lightgoldenrodyellow;
+        margin-top: 18px;
+        border-radius: 15px;
+
+
+    }
+
+}
