@@ -44,6 +44,15 @@
   border-radius: 40px;
 }
 
+.fa-heart {
+  margin-right: 7%;
+  font-size: 25px;
+}
+
+.fa-heart:hover {
+  color: #ff4bff;
+}
+
 .rectangle:hover .fa-fonctio {
   color: #963beb;
 }
@@ -128,15 +137,27 @@
   border-radius: 15px;
 }
 
-.inner-title {
+.card__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 24px auto 14px;
+}
+
+.card__title .inner-title {
+  width: 75%;
+  margin: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px auto auto 14px;
 }
 
 .container-main {
@@ -264,16 +285,12 @@
           justify-content: center;
 }
 
-.fa-arrow-left {
+.arrow {
   margin-right: 87%;
 }
 
 .logo {
   position: absolute;
-}
-
-.fa-arrow-left {
-  margin-left: 10px;
 }
 
 .footer {

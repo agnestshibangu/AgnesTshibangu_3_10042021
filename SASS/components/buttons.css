@@ -8,4 +8,13 @@
   border: none;
   border-radius: 40px;
 }
+
+.fa-heart {
+  margin-right: 7%;
+  font-size: 25px;
+}
+
+.fa-heart:hover {
+  background-image: pink;
+}
 /*# sourceMappingURL=buttons.css.map */

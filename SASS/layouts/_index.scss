@@ -71,11 +71,20 @@
     border-radius: 15px;
 }
 
-
-.inner-title {
+.card__title {
     display: flex;
-    flex-direction: column;
-    margin:  20px auto auto 14px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  20px 24px auto 14px;
+   
+    .inner-title {
+        width: 75%;
+        margin: 0;
+        flex-direction: column;
+    }   
 }
+
+
+
 
  
