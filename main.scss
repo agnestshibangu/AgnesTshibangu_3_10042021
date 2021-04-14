@@ -11,7 +11,7 @@
 //@import 'SASS/components/css.scss';
 @import 'SASS/components/buttons.scss';
 
-
+@import 'SASS/layouts/index';
 @import 'SASS/layouts/menu';
 @import 'SASS/layouts/header'; 
 @import 'SASS/layouts/footer';  
@@ -27,11 +27,21 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     margin: 0;
     padding: 0;
  }
+
+@font-face {
+    src: url(fonts/Roboto-Regular.ttf);
+    font-family: Roboto;
+}
     
+ a {
+     color: black;
+     text-decoration: none;
+ }
+
     
 
 
@@ -133,7 +143,7 @@
     .rond {
         width: 24px;
         height: 24px;
-        background-color: purple;
+        background-color: $colour-secondary;
         color: white;
         display: flex; 
         justify-content: center;
@@ -155,19 +165,8 @@
 
     // resto-container
 
-    .resto-container__title {
-        margin-top: 60px;
-    }
 
-    .resto-container {
-        width: 100%;
-        height: 1227px;
-        margin-top: 70px;
-        background-color: lightgray;
-        display: flex;
-        justify-content: center;
-    }
-
+ 
     .resto-container__inside {
         width: 89.6%;
         height: 90%;
@@ -176,14 +175,6 @@
     
     }
 
-    .resto-container__card {
-        width: 100%;
-        height: 1230px;
-        background-color: lightgoldenrodyellow;
-        margin-top: 18px;
-        border-radius: 15px;
-
-
-    }
+  
 
 }

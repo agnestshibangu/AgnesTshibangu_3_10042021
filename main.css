@@ -38,9 +38,105 @@
   width: 218px;
   height: 50px;
   color: white;
-  background-color: purple;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff4bff), to(#8158a7));
+  background-image: linear-gradient(#ff4bff, #8158a7);
   border: none;
   border-radius: 40px;
+}
+
+.rectangle:hover .fa-fonctio {
+  color: #963beb;
+}
+
+.resto-container__title {
+  margin-top: 60px;
+  font-size: 25px;
+  font-weight: 750;
+}
+
+.resto-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 70px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resto-container__inside {
+  width: 89.6%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resto-container__card {
+  height: 252px;
+}
+
+.resto-container__new-tag {
+  width: 81px;
+  height: 29px;
+  background-color: lightgreen;
+  color: darkgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-left: 243px;
+  margin-top: 13px;
+}
+
+.resto-container__img, #resto-container__img2 {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+}
+
+.resto-container__cards {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 64px;
+}
+
+.resto-container__card {
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  margin-top: 18px;
+  border-radius: 15px;
+}
+
+.inner-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px auto auto 14px;
 }
 
 .container-main {
@@ -143,7 +239,7 @@
   margin-top: 15px;
 }
 
-.btn {
+.btn--menu {
   margin-top: 50px;
   margin-bottom: 83px;
 }
@@ -160,12 +256,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-arrow-left {
+  margin-right: 87%;
+}
+
+.logo {
+  position: absolute;
+}
+
+.fa-arrow-left {
+  margin-left: 10px;
 }
 
 .footer {
@@ -201,9 +309,17 @@ li:nth-child(2), li:nth-child(3), li:nth-child(4) {
 @media (min-width: 375px) {
   * {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     margin: 0;
     padding: 0;
+  }
+  @font-face {
+    src: url(fonts/Roboto-Regular.ttf);
+    font-family: Roboto;
+  }
+  a {
+    color: black;
+    text-decoration: none;
   }
   .entete2 {
     width: 100%;
@@ -293,7 +409,7 @@ li:nth-child(2), li:nth-child(3), li:nth-child(4) {
   .rond {
     width: 24px;
     height: 24px;
-    background-color: purple;
+    background-color: #963beb;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -314,21 +430,6 @@ li:nth-child(2), li:nth-child(3), li:nth-child(4) {
   .fa-fonctio {
     margin-right: 27px;
   }
-  .resto-container__title {
-    margin-top: 60px;
-  }
-  .resto-container {
-    width: 100%;
-    height: 1227px;
-    margin-top: 70px;
-    background-color: lightgray;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .resto-container__inside {
     width: 89.6%;
     height: 90%;
@@ -339,13 +440,6 @@ li:nth-child(2), li:nth-child(3), li:nth-child(4) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .resto-container__card {
-    width: 100%;
-    height: 1230px;
-    background-color: lightgoldenrodyellow;
-    margin-top: 18px;
-    border-radius: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
