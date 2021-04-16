@@ -1,0 +1,73 @@
+  @keyframes fade {
+     from {
+         opacity: 0;
+     }
+    
+     to { 
+         opacity: 1;
+     }
+ }
+
+
+// @keyframes fadeIn {
+//     from {
+//       transform: translateY(30px);
+//     }
+  
+//     to {
+//       transform: translateY(0);
+//     }
+//   }
+
+// @for $i from 1 to 15 {
+//     .container-menu__element-#{$i} {
+//       animation: fadeIn 0.4s * $i;
+//     }
+//   }
+
+
+
+
+  @keyframes block-disp1  {
+    from {
+        transform: scale(0);
+      }
+    
+      to {
+        transform: scale(1);
+      }
+    }
+}
+
+
+@keyframes block-disp2 {
+  from {
+      transform: scale(0);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+
+
+
+
+@keyframes block-disp3  {
+  from {
+      transform: scale(0);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+
+
+
+
+
