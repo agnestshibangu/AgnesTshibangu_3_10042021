@@ -34,13 +34,14 @@
     }
 
     .resto-container__new-tag {
-        width: 81px;
+        width: 20%;
         height: 29px;
         background-color: lightgreen;
         color: darkgreen;
-        @include midflex;
+        @include midflex; 
         position: absolute;
-        margin-left: 243px;
+        margin-right: 20%;
+        margin-left: 65%;
         margin-top: 13px;
     }
 

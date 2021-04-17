@@ -1,14 +1,20 @@
 
 .animation-1 {
-    animation: block-disp1 2s ease-in-out;
+    animation: block-disp1  ease-in-out;
+    animation-delay: 1s;
 }
 
 .animation-2 {
-    animation: block-disp2 2s ease-in-out ;
+    animation: block-disp2 ease-in-out ;
     animation-delay: 2s;
 }
 
 .animation-3 {
-    animation: block-disp3 2s ease-in-out 4s;
+    animation: block-disp3 ease-in-out 4s;
     animation-delay: 4s;
 }
+
+
+.container-main {
+    animation: fade 4s linear; 
+     }

@@ -10,12 +10,14 @@
 @import 'SASS/base/box-sizing.scss' ; 
 //@import 'SASS/components/css.scss';
 @import 'SASS/components/buttons.scss';
+@import 'SASS/components/loader';
 
 @import 'SASS/layouts/index';
 @import 'SASS/layouts/menu';
 @import 'SASS/layouts/header'; 
 @import 'SASS/layouts/footer';  
 @import 'SASS/layouts/keyframes';
+@import 'SASS/layouts/animation';
 //@import 'SASS/pages/css.scss';
     //blocs qui ne s'appliquent qu'à une seule page
 //@import 'SASS/themes/css.scss';

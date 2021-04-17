@@ -10,3 +10,25 @@
     margin-left: 50%;
 }
 
+
+
+.far {
+    position: absolute;
+}
+
+ 
+.fa {
+    
+    font-size: 18px;
+    outline: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#e72c83), to(#a742c6));
+    background-image: linear-gradient(to top, #e72c83 0%, #a742c6 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+}
+
+.fa:hover {
+    opacity: 1;
+}
