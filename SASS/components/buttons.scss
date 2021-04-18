@@ -6,17 +6,47 @@
     background-image: linear-gradient(#ff4bff, #8158a7);
     border: none;
     border-radius: 40px;
-    
+    box-shadow: 4px 5px 15px grey;
 }
 
+.icon {
+    margin-bottom: 0;
+}
 
-.fa-heart {
-    margin-right: 7%;
-    font-size: 25px;
-   
-    &:hover {
-        background-image: pink;
+.far {
+    font-size: 30px;
+    position: absolute;
     }
-} 
+
+    .fa {
+    font-size: 30px;
+        outline: 0; 
+        background-image: linear-gradient(to top, #e72c83 0%,#a742c6 100%); 
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+
+        // &:hover {
+        //     animation: fa ease-in-out 2s ;
+        // }
+        
+    }
 
 
+    .fa:hover {
+        opacity: 1;
+    }
+    
+    
+    // @keyframes fa {
+    //     from {
+    //         opacity: 0;
+    //     }
+    
+    //     to {
+    //         opacity: 1;
+    //     }
+    // }
+    
+    

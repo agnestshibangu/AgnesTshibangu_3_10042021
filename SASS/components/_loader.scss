@@ -1,11 +1,22 @@
+// .spinner {
+    
+//     width: 100px;
+//     height: 100px;
+//     position: fixed;
+//     margin: 50vh 50vh;
+// }
+
 .spinner {
-    margin-top: 300px;
     width: 100px;
-    height: 100px;
-    position: absolute;
+  height: 100px;
+    display: block;
+     position: fixed;
+    // z-index: 1031; /* High z-index so it is on top of the page */
+    top: 50%;
+    right: 50%; 
+    margin-top: -50px; 
+    margin-right: -50px;
 }
-
-
 
 .spinner div {
     width: 100%;
@@ -13,21 +24,21 @@
     box-sizing: border-box;
     position: absolute;
     border: 10px solid transparent;
-    border-top-color: rgb(255, 0, 255);
+    border-top-color: rgb(0, 255, 221);
     border-radius: 50%;
-    animation: spinnerone 4s linear ;
+    animation: spinnerone 4s linear forwards ;
 }
 
 .spinner div:nth-child(2) {
     border: 5px solid transparent;
     border-bottom-color: rgb(255, 118, 255);
-    animation: spinnertwo 4s linear  ;
+    animation: spinnertwo 4s linear forwards ;
 }
 
 
 .spinner div:nth-child(3) {
     border: 7px solid transparent;
     border-bottom-color: rgb(72, 0, 189);
-    animation: spinnerthree 4s ease 0.5s ;
+    animation: spinnerthree 4s ease 0.2s forwards ;
 }
 

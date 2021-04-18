@@ -7,14 +7,31 @@
   background-image: linear-gradient(#ff4bff, #8158a7);
   border: none;
   border-radius: 40px;
+  -webkit-box-shadow: 4px 5px 15px grey;
+          box-shadow: 4px 5px 15px grey;
 }
 
-.fa-heart {
-  margin-right: 7%;
-  font-size: 25px;
+.icon {
+  margin-bottom: 0;
 }
 
-.fa-heart:hover {
-  background-image: pink;
+.far {
+  font-size: 30px;
+  position: absolute;
+}
+
+.fa {
+  font-size: 30px;
+  outline: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e72c83), to(#a742c6));
+  background-image: linear-gradient(to top, #e72c83 0%, #a742c6 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+
+.fa:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=buttons.css.map */
