@@ -347,6 +347,7 @@
 
 .container-menu__group {
   margin-top: 14px;
+  width: 100%;
 }
 
 .btn--menu {
@@ -389,6 +390,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container-menu__element--margin-top {
@@ -403,19 +407,21 @@
 
 .box-price {
   display: inline-block;
-  width: 20%;
-  height: 100%;
-  margin-left: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 18px;
+  padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 18px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightsalmon;
+  background-color: white;
   -webkit-transform: translateX(115px);
           transform: translateX(115px);
   -webkit-transition: ease-in-out 1s;
@@ -433,11 +439,11 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: greenyellow;
+  width: 15%;
   height: 100%;
-  width: 30%;
   border-radius: 0 20px 20px 0;
-  -webkit-transform: translateX(115px);
-          transform: translateX(115px);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
 }
@@ -458,6 +464,7 @@
   color: white;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+  font-size: 25px;
 }
 
 .container-menu__element:hover .fa-check-circle {

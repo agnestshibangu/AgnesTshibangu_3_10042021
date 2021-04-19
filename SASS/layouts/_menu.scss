@@ -75,6 +75,7 @@
 
 .container-menu__group {
     margin-top: 14px;
+    width: 100%;
 }
 
 
@@ -117,6 +118,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    justify-content: space-between;
 }
 
   
@@ -130,13 +132,15 @@
 }
 .box-price {
     display: inline-block;
-    width: 20%;
-    height: 100%;
-    margin-left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 18px;
+    padding-right: 10px;
     display: flex;
+    margin-left: 18px;
     justify-content: center;
     align-items: center;
-    background-color: lightsalmon;
+    background-color: white;
     transform: translateX(115px);
     transition: ease-in-out 1s;
 }
@@ -145,10 +149,10 @@
     justify-content: center;
     align-items: center;
     background-color: greenyellow;
+    width: 15%;
     height: 100%;
-    width: 30%;
     border-radius:  0 20px 20px 0;
-    transform: translateX(115px);
+    transform: translateX(100%);
     transition: ease-in-out 1s;
 }
 .container-menu__element:hover .checkbox {
@@ -161,6 +165,7 @@
     transform: translateX(30px);
     color: white;
     transition: 1s ease-in-out;
+    font-size: 25px;
 }
 .container-menu__element:hover .fa-check-circle {
     transform: translateX(0) rotate(-720deg);
