@@ -16,13 +16,15 @@
   background-image: linear-gradient(#ff4bff, #8158a7);
   border: none;
   border-radius: 40px;
-  -webkit-box-shadow: 4px 5px 15px grey;
-          box-shadow: 4px 5px 15px grey;
+  -webkit-box-shadow: 4px 5px 15px #949090;
+          box-shadow: 4px 5px 15px #949090;
 }
 
 .btn:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f77dd4), to(#ab65fa));
   background-image: linear-gradient(#f77dd4, #ab65fa);
+  -webkit-box-shadow: 0 5px 15px 0 #4e4e4e;
+          box-shadow: 0 5px 15px 0 #4e4e4e;
 }
 
 .icon {

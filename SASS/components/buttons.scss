@@ -9,9 +9,10 @@
     background-image: linear-gradient(#ff4bff, #8158a7);
     border: none;
     border-radius: 40px;
-    box-shadow: 4px 5px 15px grey;
+    box-shadow: 4px 5px 15px rgb(148, 144, 144);
     &:hover {
         background-image: linear-gradient(#f77dd4, #ab65fa);
+        box-shadow: 0 5px 15px 0 rgb(78, 78, 78);
     }
 }
 

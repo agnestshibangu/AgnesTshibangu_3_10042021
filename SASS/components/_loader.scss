@@ -24,21 +24,21 @@
     box-sizing: border-box;
     position: absolute;
     border: 10px solid transparent;
-    border-top-color: rgb(0, 255, 221);
+    border-top-color: $color-primary;
     border-radius: 50%;
-    animation: spinnerone 4s linear forwards ;
+    animation: spinnerone 3s linear forwards ;
 }
 
 .spinner div:nth-child(2) {
     border: 5px solid transparent;
-    border-bottom-color: rgb(255, 118, 255);
-    animation: spinnertwo 4s linear forwards ;
+    border-bottom-color: $color-secondary;
+    animation: spinnertwo 3s linear forwards ;
 }
 
 
 .spinner div:nth-child(3) {
     border: 7px solid transparent;
-    border-bottom-color: rgb(72, 0, 189);
-    animation: spinnerthree 4s ease 0.2s forwards ;
+    border-bottom-color: $color-tertiary;
+    animation: spinnerthree 3s ease 0.2s forwards ;
 }
 

@@ -1,0 +1,43 @@
+
+    @media (min-width: 768px) {
+
+       
+
+        .container-fonctio {
+            align-items: center;
+        }
+
+      
+
+.resto-container__cards {
+    margin: 30px;
+    width: calc(100% - 60px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+        }
+
+.resto-container__card {
+    margin: 26px;
+    height: 250px;
+    width: 500px;
+    }
+
+        footer {
+            @include midflex;
+            flex-direction: center;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        .logo--small-white {
+            margin-top: 27px;
+            margin-left: 48%;
+        }
+     
+    }

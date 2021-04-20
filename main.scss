@@ -18,6 +18,7 @@
 @import 'SASS/layouts/footer';  
 @import 'SASS/layouts/keyframes';
 @import 'SASS/layouts/animation';
+@import 'SASS/layouts/layout-tablet';
 //@import 'SASS/pages/css.scss';
     //blocs qui ne s'appliquent qu'à une seule page
 //@import 'SASS/themes/css.scss';
@@ -154,11 +155,9 @@ html {
     .rond {
         width: 24px;
         height: 24px;
-        background-color: $colour-secondary;
+        background-color: $color-primary;
         color: white;
-        display: flex; 
-        justify-content: center;
-        align-items: center;
+        @include midflex;
         border-radius: 50%;
         position: absolute;
         margin-left: -10px;
@@ -188,4 +187,13 @@ html {
 
   
 
+}
+
+
+
+@media (min-width: 1440px) {
+
+    .rectangles {
+        width: 80%;
+    }
 }
