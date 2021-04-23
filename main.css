@@ -51,15 +51,15 @@
   background-image: linear-gradient(#ff4bff, #8158a7);
   border: none;
   border-radius: 40px;
-  -webkit-box-shadow: 4px 5px 15px grey;
-          box-shadow: 4px 5px 15px grey;
+  -webkit-box-shadow: 4px 5px 15px #949090;
+          box-shadow: 4px 5px 15px #949090;
 }
 
 .btn:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f77dd4), to(#ab65fa));
   background-image: linear-gradient(#f77dd4, #ab65fa);
-  -webkit-box-shadow: 0 5px 15px 0 #7a7a7a;
-          box-shadow: 0 5px 15px 0 #7a7a7a;
+  -webkit-box-shadow: 0 5px 15px 0 #4e4e4e;
+          box-shadow: 0 5px 15px 0 #4e4e4e;
 }
 
 .icon {
@@ -372,14 +372,21 @@
 
 .inner-title__big {
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .inner-title--menu {
   margin-left: 11px;
+  width: 80%;
 }
 
 .inner-title__small {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .container-menu__inner {
@@ -392,6 +399,8 @@
   height: 70px;
   background-color: white;
   border-radius: 20px;
+  margin: 10px 0;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +428,6 @@
 }
 
 .box-price {
-  display: inline-block;
   font-size: 17px;
   font-weight: bold;
   margin-top: 18px;
@@ -428,15 +436,16 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: 18px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  -webkit-transform: translateX(115px);
-          transform: translateX(115px);
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
 }
