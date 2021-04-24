@@ -95,6 +95,7 @@
 .price {
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 .inner-title__big{
@@ -124,6 +125,7 @@
     text-overflow: ellipsis;
     justify-content: space-between;
     @include shadowbox;
+    flex: 1 0 33%;
 }
 
   
@@ -146,35 +148,76 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    transform: translateX(115px);
+    transform: translateX(-20px);
     transition: ease-in-out 1s;
 }
+
 .checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-tertiary;
-    width: 15%;
-    height: 100%;
-    border-radius:  0 20px 20px 0;
-    transform: translateX(100%);
-    transition: ease-in-out 1s;
-}
-.container-menu__element:hover .checkbox {
-    transform: translateX(0);
-}
-.container-menu__element:hover .box-price{
-    transform: translateX(0);
-}
-.fa-check-circle {
-    transform: translateX(30px);
-    color: white;
-    transition: 1s ease-in-out;
-    font-size: 25px;
-}
-.container-menu__element:hover .fa-check-circle {
-    transform: translateX(0) rotate(-720deg);
+    display: none;
+    width: 30%;
 
 }
+
+.container-menu__element:hover .checkbox {
+
+        display: block;
+        animation: caption-check-box ease .3s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+          background-color: green;
+        width: 100px;
+        height: 100%;
+       
+          overflow: hidden;
+          transform-origin: 50% 50%;
+
+}
+
+
+@keyframes caption-check-box {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+.container-menu__element:hover .box-price{
+    transform: translateX(-30px);
+}
+.fa-check-circle {
+    color: white;
+  
+    font-size: 25px;
+    animation: round-check ease 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes round-check {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+// .container-menu__element:hover .fa-check-circle {
+//     transform: translateX(0) rotate(-720deg);
+
+// }
 
 

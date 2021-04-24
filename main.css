@@ -397,6 +397,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
 }
 
 .inner-title__big {
@@ -435,6 +436,9 @@
           justify-content: space-between;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
 }
 
 .container-menu__element--margin-top {
@@ -464,54 +468,91 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  -webkit-transform: translateX(115px);
-          transform: translateX(115px);
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
 }
 
 .checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #99E2D0;
-  width: 15%;
-  height: 100%;
-  border-radius: 0 20px 20px 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: ease-in-out 1s;
-  transition: ease-in-out 1s;
+  display: none;
+  width: 30%;
 }
 
 .container-menu__element:hover .checkbox {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  display: block;
+  -webkit-animation: caption-check-box ease .3s;
+          animation: caption-check-box ease .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  background-color: green;
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes caption-check-box {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes caption-check-box {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .container-menu__element:hover .box-price {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
 }
 
 .fa-check-circle {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
   color: white;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
   font-size: 25px;
+  -webkit-animation: round-check ease 2s;
+          animation: round-check ease 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
-.container-menu__element:hover .fa-check-circle {
-  -webkit-transform: translateX(0) rotate(-720deg);
-          transform: translateX(0) rotate(-720deg);
+@-webkit-keyframes round-check {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes round-check {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .entete {
