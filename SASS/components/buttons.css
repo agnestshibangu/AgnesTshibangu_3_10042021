@@ -52,6 +52,25 @@
 }
 
 .fa:hover {
-  opacity: 1;
+  -webkit-animation: fa ease-in-out 2s forwards;
+          animation: fa ease-in-out 2s forwards;
+}
+
+@-webkit-keyframes fa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=buttons.css.map */

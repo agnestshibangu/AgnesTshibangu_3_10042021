@@ -23,49 +23,43 @@
 //     }
 //   }
 
- @for $i from 1 to 15 {
-    .container-menu__element-#{$i} {
-     animation: fadeIn 0.4s * $i;
-     }
-   }
-
 
 
 
   @keyframes block-disp1  {
     from {
-        transform: translateX(30px);
-      }
+       transform: translateX(30px);
+     }
     
-      to {
-        transform: translateX(0);
+     to {
+       transform: translateX(0);
       }
     }
 
 
-@keyframes block-disp2 {
-  from {
-      transform: scale(0);
-    }
+// @keyframes block-disp2 {
+//   from {
+//       transform: scale(0);
+//     }
   
-    to {
-      transform: scale(1);
-    }
-  }
+//     to {
+//       transform: scale(1);
+//     }
+//   }
 
 
 
 
 
-@keyframes block-disp3  {
-  from {
-      transform: scale(0);
-    }
+// @keyframes block-disp3  {
+//   from {
+//       transform: scale(0);
+//     }
   
-    to {
-      transform: scale(1);
-    }
-  }
+//     to {
+//       transform: scale(1);
+//     }
+//   }
 
 
 

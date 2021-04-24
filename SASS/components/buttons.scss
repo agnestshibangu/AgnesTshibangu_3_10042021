@@ -35,29 +35,29 @@
         background-clip: border-box;
         -webkit-background-clip: text;
         color: transparent;
-        opacity: 0;
+    opacity: 0;
       
 
-        // &:hover {
-        //     animation: fa ease-in-out 2s ;
-        // }
+         &:hover {
+         animation: fa ease-in-out 2s forwards ;
+         }
         
     }
 
 
-    .fa:hover {
-        opacity: 1;
-    }
-    
-    
-    // @keyframes fa {
-    //     from {
-    //         opacity: 0;
-    //     }
-    
-    //     to {
-    //         opacity: 1;
-    //     }
+    // .fa:hover {
+    //     opacity: 1;
     // }
+    
+    
+     @keyframes fa {
+         from {
+             opacity: 0;
+         }
+    
+         to {
+             opacity: 1;
+         }
+     }
     
     

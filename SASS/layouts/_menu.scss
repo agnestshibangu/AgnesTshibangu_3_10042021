@@ -92,6 +92,10 @@
 
 /////////////////////////////////// BAR ITEM TRANSITION ////////////////////////////////////////
 
+.price {
+    display: flex;
+    flex-direction: row;
+}
 
 .inner-title__big{
     font-weight: 700;
