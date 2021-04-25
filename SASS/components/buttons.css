@@ -35,9 +35,19 @@
   cursor: pointer;
 }
 
+.fa-heart {
+  margin-right: 7%;
+  margin-top: 10px;
+}
+
 .far {
   font-size: 30px;
   position: absolute;
+}
+
+.far:hover {
+  -webkit-animation: far ease-in-out 2s forwards;
+          animation: far ease-in-out 2s forwards;
 }
 
 .fa {
