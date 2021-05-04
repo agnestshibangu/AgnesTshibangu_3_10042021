@@ -48,6 +48,11 @@
     
     }
 
+    .container-newtag {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .resto-container__card {
         height: 252px;
     }
@@ -59,9 +64,8 @@
         color: #008766;
         @include midflex; 
         position: absolute;
-        margin-right: 20%;
-        margin-left: 65%;
-        margin-top: 13px;
+        margin-right: 2rem;
+        margin-top: 2rem;
     }
 
 
@@ -90,6 +94,7 @@
     margin-top: 18px;
     border-radius: 15px;
     @include shadowbox;
+    position: relative;
 }
 
 .card__title {
