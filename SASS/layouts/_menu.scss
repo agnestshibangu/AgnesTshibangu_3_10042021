@@ -96,19 +96,26 @@
     height: 100%;
 }
 
+.inner-title--menu, .inner-title__big, .inner-title__small {
+    overflow: hidden;
+     text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
 .inner-title__big{
     font-weight: 700;
 }
 .inner-title--menu {
     margin-left: 11px;  
     flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
 }
 
 .inner-title__small{
     margin: 0;
-    text-overflow: ellipsis;
+  
 }
 .container-menu__inner {
     margin-top: 35px;
@@ -124,7 +131,7 @@
    align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+  
     justify-content: space-between;
     @include shadowbox;
     flex: 1 0 33%;
@@ -137,6 +144,7 @@
 
 .container-menu__element:hover .inner-title--menu {
     overflow: hidden;
+    
     transition: 2s ease; 
 }
 .box-price {
@@ -178,19 +186,6 @@
 }
 
 
-@keyframes caption-check-box {
-    from {
-        transform: translateX(100px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-
-
-
 
 
 .container-menu__element:hover .box-price{
@@ -199,18 +194,6 @@
     animation-iteration-count: 1;
 }
 
-
-@keyframes box-price {
-    0% {
-        transform: translateX(115px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-
-
-}
 
 
 
@@ -223,21 +206,5 @@
 
 }
 
-@keyframes round-check {
-    0% {
-        transform: translateX(100px) rotate(0);
-    }
-
-    100% {
-        transform: translateX(0) rotate(-2160deg);
-    }
-}
-
-
-
-// .container-menu__element:hover .fa-check-circle {
-//     transform: translateX(0) rotate(-720deg);
-
-// }
 
 

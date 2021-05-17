@@ -1,3 +1,8 @@
+/////////////////////////////////////// PART 1 ////////////////////////////////////////////
+
+
+// animation loading index // 
+
 @keyframes fade {
       0% {
           opacity: 0.2;
@@ -12,19 +17,62 @@
       }
   }
 
-
-// @keyframes fadeIn {
-//     from {
-//       transform: translateY(30px);
-//     }
   
-//     to {
-//       transform: translateY(0);
-//     }
-//   }
+// loader //
 
 
+@keyframes spinnerone {
+  0% {
+      transform: rotate(0);
+      opacity: 1;
+  }
 
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+      transform: rotate(750deg);
+      opacity: 0;
+  }
+}
+
+@keyframes spinnertwo {
+  0% {
+      transform: rotate(1000deg);
+      opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+      transform: rotate(0);
+      opacity: 0;
+  }
+}
+
+@keyframes spinnerthree {
+  0% {
+      transform:  rotate(0);
+      opacity: 1;
+      
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+      transform: rotate(700deg);
+      opacity: 0;
+  }
+}
+
+/////////////////////////////////////// PART 2 ////////////////////////////////////////////
+
+// animation block item display loop //
 
   @keyframes block-disp1  {
     from {
@@ -37,80 +85,60 @@
     }
 
 
-// @keyframes block-disp2 {
-//   from {
-//       transform: scale(0);
-//     }
-  
-//     to {
-//       transform: scale(1);
-//     }
-//   }
+/////////////////////////////////////// PART 3 ////////////////////////////////////////////
+
+// heart //
 
 
+    
+@keyframes fa {
+  from {
+      opacity: 0;
+  }
 
-
-
-// @keyframes block-disp3  {
-//   from {
-//       transform: scale(0);
-//     }
-  
-//     to {
-//       transform: scale(1);
-//     }
-//   }
-
-
-
-
-
-
-  @keyframes spinnerone {
-    0% {
-        transform: rotate(0);
-        opacity: 1;
-    }
-
-    98% {
+  to {
       opacity: 1;
-    }
-
-    100% {
-        transform: rotate(750deg);
-        opacity: 0;
-    }
+  }
 }
 
-@keyframes spinnertwo {
-    0% {
-        transform: rotate(1000deg);
-        opacity: 1;
-    }
 
-    98% {
-      opacity: 1;
-    }
+/////////////////////////////////////// PART 4 ////////////////////////////////////////////
 
-    100% {
-        transform: rotate(0);
-        opacity: 0;
-    }
+// check animation //
+
+
+
+@keyframes caption-check-box {
+  from {
+      transform: translateX(100px);
+  }
+
+  to {
+      transform: translateX(0);
+  }
 }
 
-@keyframes spinnerthree {
-    0% {
-        transform:  rotate(0);
-        opacity: 1;
-        
-    }
 
-    98% {
-      opacity: 1;
-    }
 
-    100% {
-        transform: rotate(700deg);
-        opacity: 0;
-    }
+@keyframes round-check {
+  0% {
+      transform: translateX(100px) rotate(0);
+  }
+
+  100% {
+      transform: translateX(0) rotate(-2160deg);
+  }
+}
+
+
+@keyframes box-price {
+  0% {
+      transform: translateX(115px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+
+
 }
