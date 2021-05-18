@@ -97,14 +97,10 @@
     margin-right: -103px;
 }
 
-
  .inner-title--menu, .inner-title__big, .inner-title__small {
      overflow: hidden;
     text-overflow: ellipsis;
-  
- }
-
-
+}
 
 .inner-title__big{
     font-weight: 700;
@@ -113,22 +109,8 @@
 .inner-title--menu {
     margin-left: 11px;  
     flex: 1;
-    overflow: hidden;
-    // white-space: nowrap;
-    // width: 100%;
-    // transition: width 2s;
-    
+    overflow: hidden; 
 }
-
-
-// .container-menu__element:hover .inner-title--menu {
-//     width: 60%;
-//     text-overflow: ellipsis;
-   
-   
-//   }
-  
-
 
 .inner-title__small{
     margin: 0;
@@ -143,22 +125,18 @@
     height: 70px;
     background-color: white;
     border-radius: 20px;
-   //animation: fadeIn ease-in-out 1s;
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
     white-space: nowrap;
     overflow: hidden;
-  
     justify-content: space-between;
     @include shadowbox;
     flex: 1 0 33%;
 }
 
-  
 .container-menu__element--margin-top {
     margin-top: 15px;  
 }
-
 
 .box-price {
     display: inline-block;
@@ -167,24 +145,15 @@
     margin-top: 18px;
     padding-right: 10px;
     display: flex;
-
     justify-content: center;
     align-items: center;
     background-color: white;
-    // -  transform: translateX(0);
-    //  - transition: ease-in-out 1s;
-    transition:  2s linear;
+    transition: 0.7s linear;
 }
-
 
 .container-menu__element:hover .box-price {
-    // - animation: box-price ease 1s;
-    // - animation-fill-mode: forwards;
-    // - animation-iteration-count: 1;
     margin-right: 1rem;
 }
-
-
 
 .checkbox {
     display: inline-block;
@@ -193,52 +162,27 @@
     height: 100%;
     padding-right: 103px;
     display: flex;
-
     justify-content: center;
     align-items: center;
     background-color:$color-tertiary;
-    // -  transform: translateX(0);
-    //  - transition: ease-in-out 1s;
-    transition:  2s linear;
+    transition:  0.7s linear;
     @include midflex;
 }
 
 .container-menu__element:hover .checkbox {
-        
-        // - display: block;
-     // -   animation: caption-check-box 1.5s ease forwards ;
-    // -     // animation-fill-mode: forwards 2 alternate;
-        // animation-iteration-count: 1;
-        //   background-color: $color-tertiary;
-        // width: 100px;
-        // height: 100%;
-        
-        // transform-origin: 50% 50%;
-     @include midflex;
-        // margin-right: -10px;
-
-        margin-right: 5rem;
-
+    @include midflex;    
+    margin-right: 5rem;
 }
 
-
-
-
-
 .fa-check-circle {
-   margin-right: -80px;
-   overflow: hidden;
+    margin-right: -80px;
+    overflow: hidden;
     color: white;
-    font-size: 25px;
-   
+    font-size: 25px;  
 }
 
 .container-menu__element:hover .fa-check-circle {
-  
-    
-    animation: round-check 2s ease forwards 1 alternate;
-   
-
+    animation: round-check 0.7s ease forwards 1 alternate;
 }
 
 

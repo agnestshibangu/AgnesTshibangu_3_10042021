@@ -466,8 +466,8 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  -webkit-transition: 2s linear;
-  transition: 2s linear;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .container-menu__element:hover .box-price {
@@ -490,8 +490,8 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #99E2D0;
-  -webkit-transition: 2s linear;
-  transition: 2s linear;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,8 +518,8 @@
 }
 
 .container-menu__element:hover .fa-check-circle {
-  -webkit-animation: round-check 2s ease forwards 1 alternate;
-          animation: round-check 2s ease forwards 1 alternate;
+  -webkit-animation: round-check 0.7s ease forwards 1 alternate;
+          animation: round-check 0.7s ease forwards 1 alternate;
 }
 
 .entete {
