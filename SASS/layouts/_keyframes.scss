@@ -108,15 +108,15 @@
 
 
 
-@keyframes caption-check-box {
-  from {
-      transform: translateX(100px);
-  }
+// @keyframes caption-check-box {
+//   from {
+//       transform: translateX(100px);
+//   }
 
-  to {
-      transform: translateX(0);
-  }
-}
+//   to {
+//       transform: translateX(0);
+//   }
+// }
 
 
 
@@ -126,19 +126,19 @@
   }
 
   100% {
-      transform: translateX(0) rotate(-2160deg);
+      transform: translateX(0px) rotate(-2160deg);
   }
 }
 
 
-@keyframes box-price {
-  0% {
-      transform: translateX(115px);
-  }
+// - @keyframes box-price {
+//   0% {
+//       transform: translateX(115px);
+//   }
 
-  100% {
-      transform: translateX(0);
-  }
+//   100% {
+//       transform: translateX(0);
+//   }
 
 
-}
+// }
