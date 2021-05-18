@@ -399,7 +399,6 @@
 .inner-title--menu, .inner-title__big, .inner-title__small {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .inner-title__big {
@@ -408,9 +407,14 @@
 
 .inner-title--menu {
   margin-left: 11px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 100%;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.container-menu__element:hover .inner-title--menu {
+  width: 60%;
+  text-overflow: ellipsis;
 }
 
 .inner-title__small {
@@ -449,12 +453,6 @@
   margin-top: 15px;
 }
 
-.container-menu__element:hover .inner-title--menu {
-  overflow: hidden;
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
-}
-
 .box-price {
   display: inline-block;
   font-size: 17px;
@@ -464,7 +462,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 18px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
